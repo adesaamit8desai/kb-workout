@@ -110,6 +110,8 @@ ex("swing_squat", "Swings → Goblet Squats", CARDIO, "10 swings straight into 5
    ["Park the bell after the swings", "Pick it up into the goblet position", "Rest whatever is left of the minute"], 40)
 ex("abc", "Armor Building Complex", CARDIO, "Dan John's classic: 2 cleans, 1 press, 3 front squats. One-bell version: switch sides each minute.",
    ["2 cleans", "1 strict press", "3 front rack squats", "Rest for the rest of the minute"], 25)
+ex("amrap_circuit", "AMRAP Circuit", CARDIO, "Swings, goblet squats, push-ups and rows, round after round.",
+   ["10 swings", "8 goblet squats", "6 push-ups", "4 rows each arm", "Keep a pace you can hold for 20 minutes"], 60)
 ex("swing_pushup", "Swings + Push-Ups", CARDIO, "A pair: swings then push-ups.", ["Swings first, then drop for push-ups", "Keep push-ups strict"], 3)
 
 # ---------------------------------------------------------------------------
@@ -300,7 +302,7 @@ workout("swing-ladder", "Swing Pyramid", "10 · 15 · 20 · 25 · 20 · 15 · 10
     sets("row", 3, 8, side=True, note="Pause 1 sec at the top, lower slowly."))
 workout("amrap-20", "AMRAP 20", "As many rounds as possible", "conditioning", "Intermediate", "Full Body", "violet",
     "20 minutes to complete as many rounds as you can. Steady pace, good form, tap + after each round.",
-    block("AMRAP 20", 1, timed("swing", 1200, counter=True,
+    block("AMRAP 20", 1, timed("amrap_circuit", 1200, counter=True,
           target="10 swings · 8 goblet squats · 6 push-ups · 4/4 rows",
           note="Move steadily. Rest briefly whenever you need to.")))
 workout("countdown", "Countdown 10 → 1", "Swings + squats, descending", "conditioning", "All Levels", "Conditioning", "ember",

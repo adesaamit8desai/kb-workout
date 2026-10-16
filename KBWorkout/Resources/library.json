@@ -476,6 +476,20 @@
    "secondsPerRep": 25
   },
   {
+   "id": "amrap_circuit",
+   "name": "AMRAP Circuit",
+   "symbol": "figure.highintensity.intervaltraining",
+   "summary": "Swings, goblet squats, push-ups and rows, round after round.",
+   "cues": [
+    "10 swings",
+    "8 goblet squats",
+    "6 push-ups",
+    "4 rows each arm",
+    "Keep a pace you can hold for 20 minutes"
+   ],
+   "secondsPerRep": 60
+  },
+  {
    "id": "swing_pushup",
    "name": "Swings + Push-Ups",
    "symbol": "figure.highintensity.intervaltraining",
@@ -1849,7 +1863,7 @@
      "rounds": 1,
      "items": [
       {
-       "exercise": "swing",
+       "exercise": "amrap_circuit",
        "work": 1200,
        "rest": 0,
        "note": "Move steadily. Rest briefly whenever you need to.",

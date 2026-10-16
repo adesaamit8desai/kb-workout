@@ -225,8 +225,11 @@ struct PlayerView: View {
                 VStack(spacing: 2) {
                     Eyebrow(text: step.kind == .getReady ? "Get ready" : "Work", color: accent)
                     Text(countdownText)
-                        .font(Theme.numerals(session.stepRemaining < 60 ? 96 : 76, .black))
+                        .font(Theme.numerals(session.stepRemaining < 60 ? 96 : 72, .black))
                         .monospacedDigit()
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
+                        .frame(maxWidth: ringSize - 70)
                     if let side = step.side {
                         Text("\(side.uppercased()) SIDE")
                             .font(.system(size: 14, weight: .heavy))
@@ -234,15 +237,17 @@ struct PlayerView: View {
                     }
                 }
             }
-            .frame(width: 260, height: 260)
+            .frame(width: ringSize, height: ringSize)
             Text(step.kind == .getReady ? (step.exercise?.name ?? step.blockName) : step.title)
                 .font(.system(size: 28, weight: .heavy))
                 .multilineTextAlignment(.center)
             if let target = step.target, step.kind == .work {
-                Text(target)
+                // Long circuits ("10 swings · 8 squats · …") read better one part per line.
+                Text(target.count > 32 ? target.replacingOccurrences(of: " · ", with: "\n") : target)
                     .font(.system(size: 17, weight: .semibold))
                     .foregroundStyle(accent)
                     .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             if let note = step.note {
                 Text(note)
@@ -275,6 +280,10 @@ struct PlayerView: View {
                 }
             }
         }
+    }
+
+    private var ringSize: CGFloat {
+        step.showsCounter || (step.target?.count ?? 0) > 32 ? 210 : 260
     }
 
     private var countdownText: String {
