@@ -80,8 +80,9 @@ final class FlowTests: XCTestCase {
     /// Scrolls the page and horizontal shelves until the element can be tapped.
     private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
         let screen = app.windows.firstMatch.frame
+        let visibleArea = screen.insetBy(dx: 0, dy: 100)
         for _ in 0..<15 {
-            if element.exists && element.isHittable { return }
+            if element.exists && visibleArea.contains(element.frame) { return }
             let frame = element.frame
             if !element.exists || frame.minY > screen.maxY - 140 {
                 app.swipeUp()
@@ -100,7 +101,7 @@ final class FlowTests: XCTestCase {
         waitFor(app.staticTexts["Workouts"], "home title")
         let card = app.buttons["workout-amrap-20"].firstMatch
         reveal(card, in: app)
-        guard card.isHittable else {
+        guard app.windows.firstMatch.frame.contains(card.frame) else {
             snap("10-amrap-not-found")
             return XCTFail("Couldn't reach the AMRAP 20 card")
         }

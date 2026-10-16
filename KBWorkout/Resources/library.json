@@ -493,29 +493,29 @@
   "items": [
    {
     "exercise": "halo",
-    "work": 45,
-    "rest": 15,
+    "work": 40,
+    "rest": 10,
     "target": "Light bell, alternate directions"
    },
    {
     "exercise": "glute_bridge",
-    "work": 45,
-    "rest": 15
+    "work": 40,
+    "rest": 10
    },
    {
     "exercise": "hip_hinge",
-    "work": 45,
-    "rest": 15
+    "work": 40,
+    "rest": 10
    },
    {
     "exercise": "prying_squat",
-    "work": 45,
-    "rest": 15
+    "work": 40,
+    "rest": 10
    },
    {
     "exercise": "swing",
     "work": 30,
-    "rest": 30,
+    "rest": 10,
     "target": "Light and crisp, about 10 reps"
    }
   ]
@@ -531,18 +531,13 @@
     "perSide": true
    },
    {
-    "exercise": "hamstring_stretch",
-    "work": 45,
-    "rest": 0
-   },
-   {
     "exercise": "childs_pose",
-    "work": 45,
+    "work": 30,
     "rest": 0
    },
    {
     "exercise": "crocodile_breathing",
-    "work": 60,
+    "work": 45,
     "rest": 0
    }
   ]

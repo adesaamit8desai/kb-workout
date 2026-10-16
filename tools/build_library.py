@@ -146,16 +146,15 @@ def sets(exercise, n_sets, n_reps, rest=REST, side=False, note=None, target=None
     return block(nm, n_sets, reps(exercise, n_reps, rest, side, note, target))
 
 WARMUP = block("Warm-Up", 1,
-    timed("halo", 45, 15, target="Light bell, alternate directions"),
-    timed("glute_bridge", 45, 15),
-    timed("hip_hinge", 45, 15),
-    timed("prying_squat", 45, 15),
-    timed("swing", 30, 30, target="Light and crisp, about 10 reps"))
+    timed("halo", 40, 10, target="Light bell, alternate directions"),
+    timed("glute_bridge", 40, 10),
+    timed("hip_hinge", 40, 10),
+    timed("prying_squat", 40, 10),
+    timed("swing", 30, 10, target="Light and crisp, about 10 reps"))
 COOLDOWN = block("Cool-Down", 1,
     timed("hip_flexor_stretch", 30, side=True),
-    timed("hamstring_stretch", 45),
-    timed("childs_pose", 45),
-    timed("crocodile_breathing", 60))
+    timed("childs_pose", 30),
+    timed("crocodile_breathing", 45))
 
 W = []
 def workout(id, title, subtitle, category, level, focus, theme, description, *blocks, bells=1, warmup=True):

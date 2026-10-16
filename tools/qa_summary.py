@@ -16,7 +16,8 @@ for line in log:
 def clean(line):
     return re.sub(r"^.*?/kb-workout/", "", line.strip())
 
-errors = sorted({clean(l) for l in log if " error: " in l or l.startswith("error:")})
+compiler_error = re.compile(r"\.swift:\d+(:\d+)?: error: |^error: |^xcodebuild: error")
+errors = sorted({clean(l) for l in log if compiler_error.search(l)})
 warnings = sorted({clean(l) for l in log if " warning: " in l and "/kb-workout/" in l})
 
 with open(out_path, "w") as f:

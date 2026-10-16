@@ -8,7 +8,7 @@ run=$(gh run list -R "$repo" --branch main --limit 1 --json databaseId --jq '.[0
 echo "Watching run $run…"
 gh run watch "$run" -R "$repo" --interval 30 > /dev/null 2>&1 || true
 gh run view "$run" -R "$repo" --json jobs --jq '.jobs[] | "\(.name): \(.conclusion)"'
-git fetch -q origin qa-results
+git fetch -q origin +qa-results:refs/remotes/origin/qa-results
 rm -rf qa-results && mkdir qa-results
 git archive origin/qa-results | tar -x -C qa-results
 echo "QA for commit $(cat qa-results/commit.txt) (HEAD is $(git rev-parse HEAD))"

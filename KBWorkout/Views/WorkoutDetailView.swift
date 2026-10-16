@@ -53,7 +53,6 @@ struct WorkoutDetailView: View {
         .background(Color.black)
         .ignoresSafeArea(edges: .top)
         .toolbar(.visible, for: .navigationBar)
-        .toolbarBackground(.hidden, for: .navigationBar)
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $playing) { launch in
             PlayerView(workout: workout, steps: launch.steps)
@@ -115,11 +114,17 @@ struct WorkoutDetailView: View {
                     Divider().overlay(Theme.raised).padding(.leading, 16)
                 }
                 if workout.hasRepSets {
-                    Picker("Rest between sets", selection: $restBetweenSets) {
-                        ForEach([45, 60, 75, 90], id: \.self) { Text("\($0) sec").tag($0) }
+                    HStack {
+                        Text("Rest between sets")
+                        Spacer()
+                        Picker("Rest between sets", selection: $restBetweenSets) {
+                            ForEach([45, 60, 75, 90], id: \.self) { Text("\($0) sec").tag($0) }
+                        }
+                        .labelsHidden()
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 6)
+                    .padding(.leading, 16)
+                    .padding(.trailing, 4)
+                    .padding(.vertical, 4)
                 }
             }
             .tint(Theme.volt)

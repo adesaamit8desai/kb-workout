@@ -50,6 +50,7 @@ struct HistoryView: View {
                 .padding(.vertical, 12)
             }
             .background(Color.black)
+            .statusBarBackdrop()
             .toolbar(.hidden, for: .navigationBar)
         }
     }
@@ -128,7 +129,7 @@ private struct WeeklyChart: View {
                     Eyebrow(text: "Minutes per week")
                     HStack(alignment: .firstTextBaseline, spacing: 6) {
                         Text("\(average)").font(Theme.numerals(26, .black)).foregroundStyle(Theme.volt)
-                        Text("avg, last \(weeks.count) weeks")
+                        Text("avg · goal \(goal)")
                             .font(.system(size: 15, weight: .semibold))
                             .foregroundStyle(Theme.secondary)
                     }
@@ -151,10 +152,6 @@ private struct WeeklyChart: View {
                         path.addLine(to: CGPoint(x: geo.size.width, y: goalY))
                     }
                     .stroke(Color(hex: 0x48484A), style: StrokeStyle(lineWidth: 1, dash: [4, 4]))
-                    Text("goal \(goal)")
-                        .font(.system(size: 11))
-                        .foregroundStyle(Theme.secondary)
-                        .position(x: geo.size.width - 24, y: max(goalY - 9, 6))
                     HStack(alignment: .bottom, spacing: 10) {
                         ForEach(Array(weeks.enumerated()), id: \.offset) { index, week in
                             UnevenRoundedRectangle(topLeadingRadius: 6, topTrailingRadius: 6)
@@ -165,6 +162,7 @@ private struct WeeklyChart: View {
                 }
             }
             .frame(height: 110)
+            .accessibilityLabel("Weekly minutes chart, goal \(goal) minutes")
             HStack(spacing: 10) {
                 ForEach(Array(weeks.enumerated()), id: \.offset) { index, week in
                     Text(index == weeks.count - 1 ? "Now" : week.start.formatted(.dateTime.day().month(.abbreviated)))

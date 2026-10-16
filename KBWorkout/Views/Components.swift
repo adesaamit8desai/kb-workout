@@ -71,6 +71,9 @@ struct WorkoutCard: View {
 
 struct Shelf: View {
     @Environment(WorkoutLibrary.self) private var library
+    // Read so cards refresh when these settings change.
+    @AppStorage("includeWarmup") private var includeWarmup = true
+    @AppStorage("restBetweenSets") private var restBetweenSets = 60
     let title: String
     let workouts: [Workout]
 
@@ -195,5 +198,14 @@ struct PillButtonStyle: ButtonStyle {
             .background(background, in: Capsule())
             .opacity(configuration.isPressed ? 0.8 : 1)
             .scaleEffect(configuration.isPressed ? 0.98 : 1)
+    }
+}
+
+extension View {
+    /// Keeps scrolled content from showing through behind the status bar.
+    func statusBarBackdrop() -> some View {
+        safeAreaInset(edge: .top, spacing: 0) {
+            Color.clear.frame(height: 0).background(Color.black.opacity(0.92))
+        }
     }
 }

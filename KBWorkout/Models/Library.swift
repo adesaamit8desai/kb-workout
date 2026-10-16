@@ -133,7 +133,15 @@ final class WorkoutLibrary {
         workouts.filter { $0.category == category }
     }
 
-    func minutes(_ workout: Workout, options: StepOptions = StepOptions()) -> Int {
+    /// Minutes using the user's warm-up and rest settings.
+    func minutes(_ workout: Workout) -> Int {
+        let defaults = UserDefaults.standard
+        let includeWarmup = defaults.object(forKey: "includeWarmup") as? Bool ?? true
+        let rest = defaults.object(forKey: "restBetweenSets") as? Int ?? 60
+        return minutes(workout, options: StepOptions(includeWarmup: includeWarmup && workout.warmup, restBetweenSets: rest))
+    }
+
+    func minutes(_ workout: Workout, options: StepOptions) -> Int {
         Int((Double(workout.estimatedSeconds(using: self, options: options)) / 60).rounded())
     }
 

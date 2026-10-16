@@ -63,7 +63,6 @@ struct PlayerView: View {
         .padding(.horizontal, 20)
         .padding(.top, 8)
         .padding(.bottom, 12)
-        .animation(.easeInOut(duration: 0.25), value: session.index)
         .confirmationDialog("End this workout?", isPresented: $confirmingEnd, titleVisibility: .visible) {
             Button("Finish and Save") { session.end() }
             Button("Discard Workout", role: .destructive) {
@@ -181,7 +180,8 @@ struct PlayerView: View {
     private var subtitle: String {
         var parts: [String] = []
         if let side = step.side { parts.append("\(side) side") }
-        parts.append(session.workout.bells == 2 && step.section == .main ? "2 bells" : "\(Int(bellWeight)) kg bell")
+        parts.append(session.workout.bells == 2 && step.section == .main
+                     ? "2 × \(Int(bellWeight)) kg" : "\(Int(bellWeight)) kg bell")
         return parts.joined(separator: " · ")
     }
 

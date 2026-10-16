@@ -39,9 +39,13 @@ struct SummaryView: View {
                         }
                     }
                     tile("Bell") {
-                        HStack {
-                            Text("\(Int(bellWeight)) kg")
-                            Spacer()
+                        HStack(spacing: 6) {
+                            HStack(alignment: .firstTextBaseline, spacing: 2) {
+                                Text("\(Int(bellWeight))")
+                                Text("kg").font(.system(size: 17, weight: .bold))
+                            }
+                            .fixedSize()
+                            Spacer(minLength: 0)
                             stepperButton("minus", label: "Lighter") { bellWeight = max(4, bellWeight - 2) }
                             stepperButton("plus", label: "Heavier") { bellWeight = min(48, bellWeight + 2) }
                         }

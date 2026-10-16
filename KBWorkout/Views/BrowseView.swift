@@ -5,6 +5,8 @@ struct BrowseView: View {
     @Environment(WorkoutLibrary.self) private var library
     @Query(sort: \CompletedWorkout.date, order: .reverse) private var history: [CompletedWorkout]
     @State private var showingSettings = false
+    @AppStorage("includeWarmup") private var includeWarmup = true
+    @AppStorage("restBetweenSets") private var restBetweenSets = 60
 
     var body: some View {
         NavigationStack {
@@ -27,6 +29,7 @@ struct BrowseView: View {
                 .padding(.vertical, 12)
             }
             .background(Color.black)
+            .statusBarBackdrop()
             .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(for: Workout.self) { WorkoutDetailView(workout: $0) }
             .sheet(isPresented: $showingSettings) { SettingsView() }
