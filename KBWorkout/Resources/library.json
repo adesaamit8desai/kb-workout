@@ -1,0 +1,2493 @@
+{
+ "exercises": [
+  {
+   "id": "halo",
+   "name": "Halo",
+   "symbol": "figure.mind.and.body",
+   "summary": "Circle the bell around your head to open the shoulders and upper back.",
+   "cues": [
+    "Hold the bell upside down by the horns",
+    "Keep it close to your head",
+    "Squeeze glutes, brace the core",
+    "Switch direction each lap"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "glute_bridge",
+   "name": "Glute Bridge",
+   "symbol": "figure.pilates",
+   "summary": "Wakes up the glutes before hinging.",
+   "cues": [
+    "Feet flat, knees bent",
+    "Drive through the heels",
+    "Squeeze hard at the top",
+    "Ribs down, don't arch the low back"
+   ],
+   "secondsPerRep": 2
+  },
+  {
+   "id": "hip_hinge",
+   "name": "Hip Hinge Drill",
+   "symbol": "figure.flexibility",
+   "summary": "Bodyweight hinge to groove the swing and deadlift pattern.",
+   "cues": [
+    "Push hips back like closing a car door",
+    "Soft knees, flat back",
+    "Feel the hamstrings load",
+    "Stand tall by squeezing the glutes"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "prying_squat",
+   "name": "Prying Goblet Squat",
+   "symbol": "figure.cross.training",
+   "summary": "Sit in the bottom of a goblet squat and gently pry the hips open.",
+   "cues": [
+    "Bell at the chest",
+    "Elbows inside the knees",
+    "Shift side to side slowly",
+    "Chest proud"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "hip_flexor_stretch",
+   "name": "Half-Kneeling Hip Flexor Stretch",
+   "symbol": "figure.cooldown",
+   "summary": "Opens the front of the hips after hinging.",
+   "cues": [
+    "Kneel on one knee",
+    "Tuck the pelvis, squeeze the back glute",
+    "Reach the same-side arm overhead"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "hamstring_stretch",
+   "name": "Hamstring Stretch",
+   "symbol": "figure.flexibility",
+   "summary": "Gentle standing or seated hamstring stretch.",
+   "cues": [
+    "Hinge from the hips",
+    "Long spine",
+    "Breathe slowly into the stretch"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "childs_pose",
+   "name": "Child's Pose",
+   "symbol": "figure.yoga",
+   "summary": "Relax the back and shoulders.",
+   "cues": [
+    "Knees wide, hips to heels",
+    "Reach the arms long",
+    "Slow breathing through the nose"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "crocodile_breathing",
+   "name": "Crocodile Breathing",
+   "symbol": "figure.mind.and.body",
+   "summary": "Face-down belly breathing to bring the heart rate down.",
+   "cues": [
+    "Forehead on your hands",
+    "Breathe in through the nose for 4",
+    "Feel your belly press into the floor",
+    "Long slow exhale"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "swing",
+   "name": "KB Swing (2-hand)",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "The foundation of kettlebell training: explosive hip power for strength and conditioning.",
+   "cues": [
+    "Hike the bell back high between the legs",
+    "Snap the hips, squeeze the glutes",
+    "Bell floats to chest height; arms are ropes",
+    "Stand up tall at the top",
+    "Keep it dynamic, control the bell"
+   ],
+   "secondsPerRep": 2
+  },
+  {
+   "id": "one_arm_swing",
+   "name": "One-Arm Swing",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "A swing with one hand: more grip and anti-rotation core work.",
+   "cues": [
+    "Square shoulders, don't let the bell twist you",
+    "Same hip snap as the two-hand swing",
+    "Free hand guards the hip or mirrors the bell"
+   ],
+   "secondsPerRep": 2
+  },
+  {
+   "id": "deadlift",
+   "name": "KB Deadlift",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "Foundational hinge for the back of the body.",
+   "cues": [
+    "Bell between the feet, under the hips",
+    "Hinge back with a flat back",
+    "Push the floor away",
+    "Stand tall, don't lean back"
+   ],
+   "secondsPerRep": 4
+  },
+  {
+   "id": "double_deadlift",
+   "name": "KB Deadlift (2 bells)",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "Deadlift with a bell beside each foot for heavier loading.",
+   "cues": [
+    "Bells beside the feet, handles in line with ankles",
+    "Hinge, flat back, grip hard",
+    "2–3 sec slow lowering",
+    "Pick up and put down on the same spot"
+   ],
+   "secondsPerRep": 4
+  },
+  {
+   "id": "rdl",
+   "name": "KB Romanian Deadlift",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "Hamstring-focused hinge that starts from standing.",
+   "cues": [
+    "Chest up, shoulders back",
+    "Push the hips back, soft knees",
+    "Find the big hamstring stretch",
+    "Bell stays close to the legs"
+   ],
+   "secondsPerRep": 4
+  },
+  {
+   "id": "sl_deadlift",
+   "name": "Single-Leg Deadlift",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "One-leg hinge for balance, hips and hamstrings.",
+   "cues": [
+    "Bell in the hand opposite the standing leg",
+    "Reach the back leg long like a see-saw",
+    "Hips stay square to the floor",
+    "Stand tall with a glute squeeze"
+   ],
+   "secondsPerRep": 4
+  },
+  {
+   "id": "goblet_squat",
+   "name": "KB Goblet Squat",
+   "symbol": "figure.cross.training",
+   "summary": "Front-loaded squat for legs and core.",
+   "cues": [
+    "Bell at the chest, elbows down",
+    "Slowly lower to your deepest position",
+    "Hold the bottom for a second",
+    "Drive up through the whole foot"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "front_rack_squat",
+   "name": "KB Front Rack Squat",
+   "symbol": "figure.cross.training",
+   "summary": "Single-bell squat from the rack position — great for the core.",
+   "cues": [
+    "Bell in the rack, wrist straight",
+    "Don't lean toward the bell",
+    "Slowly lower, pause at the bottom",
+    "Drive up tall"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "reverse_lunge",
+   "name": "KB Reverse Lunge (Goblet)",
+   "symbol": "figure.step.training",
+   "summary": "Step-back lunges holding the bell at the chest.",
+   "cues": [
+    "Step back softly",
+    "Back knee gently touches the ground",
+    "Front shin roughly vertical",
+    "Drive up through the front heel"
+   ],
+   "secondsPerRep": 4
+  },
+  {
+   "id": "split_squat",
+   "name": "KB Split Squat",
+   "symbol": "figure.step.training",
+   "summary": "Static lunge: stay in a split stance and go straight down and up.",
+   "cues": [
+    "Long split stance",
+    "Knee gently touches the ground",
+    "Torso tall",
+    "Finish all reps on one leg, then switch"
+   ],
+   "secondsPerRep": 4
+  },
+  {
+   "id": "thruster",
+   "name": "Goblet Thruster",
+   "symbol": "figure.highintensity.intervaltraining",
+   "summary": "Goblet squat straight into an overhead press. A big heart-rate driver.",
+   "cues": [
+    "Squat with the bell at the chest",
+    "Drive up hard",
+    "Use the leg drive to press overhead",
+    "Lower to the chest, then squat"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "press",
+   "name": "KB Strict Press",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "Strict overhead press from the rack.",
+   "cues": [
+    "Squeeze glutes and grip hard",
+    "Press up and slightly back",
+    "Lock out with the bicep by your ear",
+    "Slowly lower back to the rack"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "half_kneeling_press",
+   "name": "KB Press (Half Kneeling)",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "Press from a half-kneeling stance. Removes the legs and challenges the core.",
+   "cues": [
+    "Down knee on the same side as the bell",
+    "Squeeze the down-side glute",
+    "Lock out at the top",
+    "Slow lower back to the rack"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "push_press",
+   "name": "KB Push Press",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "A dip and drive from the legs to move a heavier bell overhead.",
+   "cues": [
+    "Quick shallow dip",
+    "Drive through the legs",
+    "Punch the bell up to lockout",
+    "Lower under control to the rack"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "floor_press",
+   "name": "KB Floor Press",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "Lying press for chest and triceps that's easy on the shoulders.",
+   "cues": [
+    "Lie on your back, knees bent",
+    "Upper arm at 45°",
+    "Press straight up and lock out",
+    "Lower until the elbow touches the floor"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "bridged_floor_press",
+   "name": "KB Bridged Floor Press",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "Floor press from a glute bridge for more range and glute work.",
+   "cues": [
+    "Get into a bridge first",
+    "Press and hold at the top for a second",
+    "Lower slowly to the floor",
+    "Keep the hips high throughout"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "pushup",
+   "name": "Push-Up",
+   "symbol": "figure.core.training",
+   "summary": "Bodyweight press. Hands on a bench or the bell makes it easier.",
+   "cues": [
+    "Hands under the shoulders",
+    "Body in one straight line",
+    "Elbows at 45°",
+    "Chest to the floor, then push it away"
+   ],
+   "secondsPerRep": 2
+  },
+  {
+   "id": "row",
+   "name": "KB Bent Row",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "Bent-over row for the back and grip.",
+   "cues": [
+    "Staggered stance, free hand on thigh",
+    "Flat back",
+    "Pull the elbow to your hip pocket",
+    "Pause 1 sec at the top, lower slowly"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "high_pull",
+   "name": "KB High Pull",
+   "symbol": "figure.strengthtraining.traditional",
+   "summary": "Explosive hinge into a high row. Builds the upper back and power.",
+   "cues": [
+    "Start like a swing",
+    "Snap the hips and pull the elbow high",
+    "Keep elbows high and grip soft",
+    "Let it swing back down under control"
+   ],
+   "secondsPerRep": 2
+  },
+  {
+   "id": "clean",
+   "name": "KB Clean",
+   "symbol": "figure.strengthtraining.functional",
+   "summary": "Bring the bell from a swing to the rack position.",
+   "cues": [
+    "Keep the bell close, zip up the jacket",
+    "Spear the hand through so it doesn't bang",
+    "Solid rack: wrist straight, elbow on ribs",
+    "Let it drop back into the hike"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "getup",
+   "name": "Turkish Get-Up",
+   "symbol": "figure.core.training",
+   "summary": "Slow, controlled stand-up from the floor with the bell locked out overhead.",
+   "cues": [
+    "Eyes on the bell the whole time",
+    "Arm locked, knuckles to the ceiling",
+    "Roll to elbow, then hand, then bridge high",
+    "Sweep the leg, kneel, stand. Reverse it slowly"
+   ],
+   "secondsPerRep": 35
+  },
+  {
+   "id": "suitcase_march",
+   "name": "Suitcase March",
+   "symbol": "figure.walk",
+   "summary": "March in place holding one bell. Builds anti-side-bend core strength.",
+   "cues": [
+    "Stand tall, don't lean toward the bell",
+    "Knees to hip height",
+    "Shoulders level",
+    "Breathe behind the brace"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "rack_march",
+   "name": "Front Rack March",
+   "symbol": "figure.walk",
+   "summary": "March in place with the bell in the rack position.",
+   "cues": [
+    "Solid rack, wrist straight",
+    "Tall posture",
+    "Slow, controlled knees"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "plank",
+   "name": "Plank",
+   "symbol": "figure.core.training",
+   "summary": "Hard-style plank: maximal tension for a short time.",
+   "cues": [
+    "Elbows under shoulders",
+    "Squeeze glutes and quads",
+    "Pull the elbows toward the toes",
+    "Breathe in short sips"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "side_plank",
+   "name": "Side Plank",
+   "symbol": "figure.core.training",
+   "summary": "Side-on plank for the obliques and hips.",
+   "cues": [
+    "Elbow under shoulder",
+    "Hips high, body in a line",
+    "Top hand on hip or reaching up"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "dead_bug",
+   "name": "Dead Bug",
+   "symbol": "figure.core.training",
+   "summary": "Controlled core work that teaches bracing while moving.",
+   "cues": [
+    "Low back pressed into the floor",
+    "Extend opposite arm and leg slowly",
+    "Exhale as you reach",
+    "Control, not speed"
+   ],
+   "secondsPerRep": 3
+  },
+  {
+   "id": "clean_squat_press",
+   "name": "Clean → Squat → Press",
+   "symbol": "figure.highintensity.intervaltraining",
+   "summary": "Clean to the rack, front squat, then press. One rep of each, then repeat.",
+   "cues": [
+    "Clean, squat, press = one cycle",
+    "Keep cycling around",
+    "Switch hands each time",
+    "Smooth and steady beats fast and sloppy"
+   ],
+   "secondsPerRep": 7
+  },
+  {
+   "id": "swing_squat",
+   "name": "Swings → Goblet Squats",
+   "symbol": "figure.highintensity.intervaltraining",
+   "summary": "10 swings straight into 5 goblet squats, then rest for the rest of the minute.",
+   "cues": [
+    "Park the bell after the swings",
+    "Pick it up into the goblet position",
+    "Rest whatever is left of the minute"
+   ],
+   "secondsPerRep": 40
+  },
+  {
+   "id": "abc",
+   "name": "Armor Building Complex",
+   "symbol": "figure.highintensity.intervaltraining",
+   "summary": "Dan John's classic: 2 cleans, 1 press, 3 front squats. One-bell version: switch sides each minute.",
+   "cues": [
+    "2 cleans",
+    "1 strict press",
+    "3 front rack squats",
+    "Rest for the rest of the minute"
+   ],
+   "secondsPerRep": 25
+  },
+  {
+   "id": "swing_pushup",
+   "name": "Swings + Push-Ups",
+   "symbol": "figure.highintensity.intervaltraining",
+   "summary": "A pair: swings then push-ups.",
+   "cues": [
+    "Swings first, then drop for push-ups",
+    "Keep push-ups strict"
+   ],
+   "secondsPerRep": 3
+  }
+ ],
+ "warmup": {
+  "name": "Warm-Up",
+  "rounds": 1,
+  "items": [
+   {
+    "exercise": "halo",
+    "work": 45,
+    "rest": 15,
+    "target": "Light bell, alternate directions"
+   },
+   {
+    "exercise": "glute_bridge",
+    "work": 45,
+    "rest": 15
+   },
+   {
+    "exercise": "hip_hinge",
+    "work": 45,
+    "rest": 15
+   },
+   {
+    "exercise": "prying_squat",
+    "work": 45,
+    "rest": 15
+   },
+   {
+    "exercise": "swing",
+    "work": 30,
+    "rest": 30,
+    "target": "Light and crisp, about 10 reps"
+   }
+  ]
+ },
+ "cooldown": {
+  "name": "Cool-Down",
+  "rounds": 1,
+  "items": [
+   {
+    "exercise": "hip_flexor_stretch",
+    "work": 30,
+    "rest": 0,
+    "perSide": true
+   },
+   {
+    "exercise": "hamstring_stretch",
+    "work": 45,
+    "rest": 0
+   },
+   {
+    "exercise": "childs_pose",
+    "work": 45,
+    "rest": 0
+   },
+   {
+    "exercise": "crocodile_breathing",
+    "work": 60,
+    "rest": 0
+   }
+  ]
+ },
+ "workouts": [
+  {
+   "id": "session-a",
+   "title": "Session A",
+   "subtitle": "Deadlift · Press · Row · Squat · Swing",
+   "category": "programme",
+   "level": "Beginner",
+   "focus": "Full Body",
+   "theme": "ember",
+   "description": "Hinge, press, row and squat, then a 90/60 conditioning finisher.",
+   "bells": 2,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Deadlift (2 bells)",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "double_deadlift",
+       "rest": 60,
+       "reps": 6,
+       "note": "2–3 sec slow lowering. Pick up and put down on the same spot."
+      }
+     ]
+    },
+    {
+     "name": "KB Strict Press",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "press",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Lock out at the top and slowly lower back to the rack."
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true,
+       "note": "Pause 1 sec at the top, lower slowly."
+      }
+     ]
+    },
+    {
+     "name": "KB Goblet Squat",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "rest": 60,
+       "reps": 8,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 60,
+       "reps": 12,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    },
+    {
+     "name": "Conditioning 90/60",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "clean_squat_press",
+       "work": 90,
+       "rest": 60,
+       "note": "Keep cycling around. Switch hands each time."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "session-b",
+   "title": "Session B",
+   "subtitle": "Front Squat · Floor Press · High Pull · Lunge · Swing",
+   "category": "programme",
+   "level": "Beginner",
+   "focus": "Full Body",
+   "theme": "ocean",
+   "description": "Front rack squats, bridged presses and high pulls, finished with a 6-minute EMOM.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Front Rack Squat",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "front_rack_squat",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Bridged Floor Press",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "bridged_floor_press",
+       "rest": 60,
+       "reps": 8,
+       "note": "Bridge, press, hold at the top for a second, lower slowly."
+      }
+     ]
+    },
+    {
+     "name": "KB High Pull",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "high_pull",
+       "rest": 60,
+       "reps": 12,
+       "note": "Keep elbows high, and soft grip."
+      }
+     ]
+    },
+    {
+     "name": "KB Reverse Lunge (Goblet)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "reverse_lunge",
+       "rest": 60,
+       "reps": 6,
+       "note": "Aim for your knee to gently touch the ground before coming back up.",
+       "target": "6 each leg"
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 60,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    },
+    {
+     "name": "Conditioning: EMOM 6",
+     "rounds": 6,
+     "items": [
+      {
+       "exercise": "swing_squat",
+       "work": 60,
+       "rest": 0,
+       "note": "Start each minute on the beep. Rest whatever is left.",
+       "target": "10 swings → 5 goblet squats"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "session-c",
+   "title": "Session C",
+   "subtitle": "Clean · Kneeling Press · RDL · Split Squat · Swing",
+   "category": "programme",
+   "level": "Beginner",
+   "focus": "Full Body",
+   "theme": "violet",
+   "description": "Cleans and half-kneeling presses, hamstring work, then a 6-minute non-stop finisher.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Clean",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "clean",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Keep the bell close, solid rack position."
+      }
+     ]
+    },
+    {
+     "name": "KB Press (Half Kneeling)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "half_kneeling_press",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true,
+       "note": "Lock out at the top and slowly lower back to the rack."
+      }
+     ]
+    },
+    {
+     "name": "KB Romanian Deadlift",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "rdl",
+       "rest": 60,
+       "reps": 8,
+       "note": "Chest up, shoulders back. Find the big hamstring stretch."
+      }
+     ]
+    },
+    {
+     "name": "KB Split Squat",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "split_squat",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true,
+       "note": "Aim for your knee to gently touch the ground before coming back up."
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 60,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    },
+    {
+     "name": "Conditioning: 6-min Continuous",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "clean_squat_press",
+       "work": 360,
+       "rest": 0,
+       "note": "No stopping! Alternate hands each time. Tap + after each round.",
+       "target": "3 clean + 3 squat + 3 press",
+       "counter": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "session-d",
+   "title": "Single-Leg Strength",
+   "subtitle": "SL Deadlift · Kneeling Press · Split Squat · Row",
+   "category": "strength",
+   "level": "Beginner",
+   "focus": "Balance & Legs",
+   "theme": "teal",
+   "description": "Everything on one side at a time to fix imbalances and build the hips. Finishes with a short swing EMOM.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Single-Leg Deadlift",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "sl_deadlift",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true,
+       "note": "Move slowly. Touch the bell down lightly if you need balance."
+      }
+     ]
+    },
+    {
+     "name": "KB Press (Half Kneeling)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "half_kneeling_press",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true,
+       "note": "Lock out at the top and slowly lower back to the rack."
+      }
+     ]
+    },
+    {
+     "name": "KB Split Squat",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "split_squat",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true,
+       "note": "Aim for your knee to gently touch the ground before coming back up."
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 60,
+       "reps": 8,
+       "perSide": true,
+       "note": "Pause 1 sec at the top, lower slowly."
+      }
+     ]
+    },
+    {
+     "name": "Suitcase March",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "suitcase_march",
+       "work": 30,
+       "rest": 30,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "Swing EMOM 5",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 60,
+       "rest": 0,
+       "note": "Swing on the minute, rest the remainder.",
+       "target": "12 swings"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "push-pull",
+   "title": "Push & Pull",
+   "subtitle": "Floor Press · Row · Push-Up · High Pull",
+   "category": "strength",
+   "level": "Beginner",
+   "focus": "Upper Body",
+   "theme": "rose",
+   "description": "Paired upper-body pushing and pulling for a strong chest, back and shoulders.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Floor Press",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "floor_press",
+       "rest": 45,
+       "reps": 8,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 45,
+       "reps": 8,
+       "perSide": true,
+       "note": "Pause 1 sec at the top, lower slowly."
+      }
+     ]
+    },
+    {
+     "name": "Push-Up",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "pushup",
+       "rest": 60,
+       "note": "Stop 1–2 reps before your form breaks.",
+       "target": "Max good reps"
+      }
+     ]
+    },
+    {
+     "name": "KB High Pull",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "high_pull",
+       "rest": 60,
+       "reps": 10,
+       "note": "Keep elbows high, and soft grip."
+      }
+     ]
+    },
+    {
+     "name": "Halo",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "halo",
+       "rest": 60,
+       "reps": 5,
+       "target": "5 each direction"
+      }
+     ]
+    },
+    {
+     "name": "Plank",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "plank",
+       "work": 20,
+       "rest": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leg-day",
+   "title": "Leg Day",
+   "subtitle": "Goblet Squat · RDL · Lunge · Bridge · Swing",
+   "category": "strength",
+   "level": "All Levels",
+   "focus": "Lower Body",
+   "theme": "ember",
+   "description": "Squat, hinge and lunge with plenty of volume. Expect to feel it tomorrow.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Goblet Squat",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "rest": 60,
+       "reps": 10,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Romanian Deadlift",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "rdl",
+       "rest": 60,
+       "reps": 10,
+       "note": "Chest up, shoulders back. Find the big hamstring stretch."
+      }
+     ]
+    },
+    {
+     "name": "KB Reverse Lunge (Goblet)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "reverse_lunge",
+       "rest": 60,
+       "reps": 8,
+       "note": "Aim for your knee to gently touch the ground before coming back up.",
+       "target": "8 each leg"
+      }
+     ]
+    },
+    {
+     "name": "Glute Bridge",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "glute_bridge",
+       "rest": 30,
+       "reps": 15,
+       "note": "Hold each rep at the top for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 60,
+       "reps": 20,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "getup-practice",
+   "title": "Get-Up Practice",
+   "subtitle": "Get-Up · Goblet Squat · Swing",
+   "category": "strength",
+   "level": "All Levels",
+   "focus": "Full Body",
+   "theme": "steel",
+   "description": "Slow Turkish get-ups for full-body strength and shoulder stability, plus squats and swings.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Turkish Get-Up",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "getup",
+       "rest": 45,
+       "reps": 1,
+       "perSide": true,
+       "note": "Smooth, never rushed. Use a lighter bell if needed.",
+       "target": "1 slow rep each side"
+      }
+     ]
+    },
+    {
+     "name": "KB Goblet Squat",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "rest": 60,
+       "reps": 8,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 45,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    },
+    {
+     "name": "Side Plank",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "side_plank",
+       "work": 20,
+       "rest": 10,
+       "perSide": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "press-ladders",
+   "title": "Press Ladders",
+   "subtitle": "1-2-3 ladders · Row · Squat · Swing",
+   "category": "strength",
+   "level": "Intermediate",
+   "focus": "Upper Body",
+   "theme": "ocean",
+   "description": "Classic ladder training: 1 rep, rest, 2 reps, rest, 3 reps. Lots of quality presses without grinding.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Press Ladders",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "press",
+       "rest": 15,
+       "reps": 1,
+       "perSide": true
+      },
+      {
+       "exercise": "press",
+       "rest": 20,
+       "reps": 2,
+       "perSide": true
+      },
+      {
+       "exercise": "press",
+       "rest": 60,
+       "reps": 3,
+       "perSide": true,
+       "note": "Each rung: left then right. Rest is short until the end of the ladder."
+      }
+     ]
+    },
+    {
+     "name": "Row Ladders",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 15,
+       "reps": 2,
+       "perSide": true
+      },
+      {
+       "exercise": "row",
+       "rest": 20,
+       "reps": 4,
+       "perSide": true
+      },
+      {
+       "exercise": "row",
+       "rest": 60,
+       "reps": 6,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "KB Goblet Squat",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "rest": 60,
+       "reps": 8,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 45,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "heavy-hinge",
+   "title": "Heavy Hinge",
+   "subtitle": "Double Deadlift · Swings · Carries",
+   "category": "strength",
+   "level": "Intermediate",
+   "focus": "Posterior Chain",
+   "theme": "violet",
+   "description": "Build a powerful back side: heavy deadlifts, ten sets of ten swings and loaded marches.",
+   "bells": 2,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Deadlift (2 bells)",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "double_deadlift",
+       "rest": 75,
+       "reps": 5,
+       "note": "Heaviest bells you can move with a flat back."
+      }
+     ]
+    },
+    {
+     "name": "10 × 10 Swings",
+     "rounds": 10,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 30,
+       "rest": 30,
+       "note": "Every swing is a hard hip snap.",
+       "target": "10 crisp swings"
+      }
+     ]
+    },
+    {
+     "name": "Suitcase March",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "suitcase_march",
+       "work": 30,
+       "rest": 15,
+       "perSide": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rack-strength",
+   "title": "Front Rack Strength",
+   "subtitle": "Clean · Front Squat · Push Press · Row",
+   "category": "strength",
+   "level": "Intermediate",
+   "focus": "Full Body",
+   "theme": "teal",
+   "description": "Everything from the rack position: cleans, squats and push presses.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Clean",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "clean",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Keep the bell close, solid rack position."
+      }
+     ]
+    },
+    {
+     "name": "KB Front Rack Squat",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "front_rack_squat",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Push Press",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "push_press",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Dip and drive, then lower slowly to the rack."
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 60,
+       "reps": 8,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "Rack March",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "rack_march",
+       "work": 30,
+       "rest": 15,
+       "perSide": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics",
+   "title": "Kettlebell Basics",
+   "subtitle": "Start here",
+   "category": "strength",
+   "level": "Beginner",
+   "focus": "Full Body",
+   "theme": "steel",
+   "description": "A friendly introduction to the core movements with plenty of rest. Learn the hinge and squat before going heavier.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "KB Deadlift",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "deadlift",
+       "rest": 60,
+       "reps": 8,
+       "note": "Practise the hinge: hips back, flat back."
+      }
+     ]
+    },
+    {
+     "name": "KB Goblet Squat",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "rest": 60,
+       "reps": 8,
+       "note": "Slowly lower to your deepest position and hold for a second."
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 60,
+       "reps": 10,
+       "note": "Only if the deadlift feels solid."
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 60,
+       "reps": 8,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "KB Strict Press",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "press",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Lock out at the top and slowly lower back to the rack."
+      }
+     ]
+    },
+    {
+     "name": "Core",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "dead_bug",
+       "work": 40,
+       "rest": 20
+      },
+      {
+       "exercise": "plank",
+       "work": 20,
+       "rest": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "swings-getups",
+   "title": "Swings & Get-Ups",
+   "subtitle": "The simple, proven classic",
+   "category": "conditioning",
+   "level": "All Levels",
+   "focus": "Full Body",
+   "theme": "ember",
+   "description": "Inspired by Simple & Sinister: 100 swings in sets of 10, then slow Turkish get-ups.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "100 Swings",
+     "rounds": 10,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 60,
+       "rest": 0,
+       "note": "Start on the beep, rest the rest of the minute.",
+       "target": "10 swings"
+      }
+     ]
+    },
+    {
+     "name": "Get-Ups",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "getup",
+       "rest": 30,
+       "reps": 1,
+       "perSide": true,
+       "target": "1 slow rep each side"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "swing-burn",
+   "title": "Swing Burn",
+   "subtitle": "40/20 intervals",
+   "category": "conditioning",
+   "level": "Intermediate",
+   "focus": "Conditioning",
+   "theme": "volt",
+   "description": "Heart-rate-raising intervals built around the swing, finished with a fast swing ladder.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Conditioning Circuit",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 40,
+       "rest": 20,
+       "target": "Max crisp reps"
+      },
+      {
+       "exercise": "goblet_squat",
+       "work": 40,
+       "rest": 20
+      },
+      {
+       "exercise": "pushup",
+       "work": 30,
+       "rest": 20,
+       "target": "Hands elevated if needed"
+      },
+      {
+       "exercise": "reverse_lunge",
+       "work": 40,
+       "rest": 20,
+       "target": "Alternate legs"
+      },
+      {
+       "exercise": "plank",
+       "work": 30,
+       "rest": 30
+      }
+     ],
+     "restBetweenRounds": 45
+    },
+    {
+     "name": "Swing Finisher",
+     "rounds": 8,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 20,
+       "rest": 10,
+       "target": "Fast, powerful hips"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tabata",
+   "title": "Tabata Four",
+   "subtitle": "4 × 4-minute Tabatas",
+   "category": "conditioning",
+   "level": "Intermediate",
+   "focus": "Conditioning",
+   "theme": "rose",
+   "description": "Four Tabatas: 20 seconds hard, 10 seconds rest, 8 times. One minute between each.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Tabata 1: Swings",
+     "rounds": 8,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 20,
+       "rest": 10
+      }
+     ]
+    },
+    {
+     "name": "Rest",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "crocodile_breathing",
+       "work": 60,
+       "rest": 0,
+       "target": "Breathe and recover"
+      }
+     ]
+    },
+    {
+     "name": "Tabata 2: Goblet Squats",
+     "rounds": 8,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "work": 20,
+       "rest": 10
+      }
+     ]
+    },
+    {
+     "name": "Rest",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "crocodile_breathing",
+       "work": 60,
+       "rest": 0,
+       "target": "Breathe and recover"
+      }
+     ]
+    },
+    {
+     "name": "Tabata 3: Swings",
+     "rounds": 8,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 20,
+       "rest": 10
+      }
+     ]
+    },
+    {
+     "name": "Rest",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "crocodile_breathing",
+       "work": 60,
+       "rest": 0,
+       "target": "Breathe and recover"
+      }
+     ]
+    },
+    {
+     "name": "Tabata 4: Push-Ups",
+     "rounds": 8,
+     "items": [
+      {
+       "exercise": "pushup",
+       "work": 20,
+       "rest": 10,
+       "target": "Knees down if needed"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "emom-20",
+   "title": "EMOM 20",
+   "subtitle": "Swing · Squat · Press · Push-Up",
+   "category": "conditioning",
+   "level": "Intermediate",
+   "focus": "Full Body",
+   "theme": "ocean",
+   "description": "Every minute on the minute for 20 minutes, rotating four movements. Rest whatever is left of each minute.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "EMOM 20",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 60,
+       "rest": 0,
+       "target": "15 swings"
+      },
+      {
+       "exercise": "goblet_squat",
+       "work": 60,
+       "rest": 0,
+       "target": "10 goblet squats"
+      },
+      {
+       "exercise": "press",
+       "work": 60,
+       "rest": 0,
+       "target": "5 each arm"
+      },
+      {
+       "exercise": "pushup",
+       "work": 60,
+       "rest": 0,
+       "target": "10 push-ups"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "swing-ladder",
+   "title": "Swing Pyramid",
+   "subtitle": "10 · 15 · 20 · 25 · 20 · 15 · 10",
+   "category": "conditioning",
+   "level": "Intermediate",
+   "focus": "Conditioning",
+   "theme": "volt",
+   "description": "Climb a pyramid of swing sets with goblet squats in between. 115 swings and 40 squats.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "10 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 10,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "15 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "20 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 20,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "25 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 25,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "20 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 20,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "15 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "10 Swings",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 20,
+       "reps": 10,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 40,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "KB Strict Press",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "press",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Lock out at the top and slowly lower back to the rack."
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 60,
+       "reps": 8,
+       "perSide": true,
+       "note": "Pause 1 sec at the top, lower slowly."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "amrap-20",
+   "title": "AMRAP 20",
+   "subtitle": "As many rounds as possible",
+   "category": "conditioning",
+   "level": "Intermediate",
+   "focus": "Full Body",
+   "theme": "violet",
+   "description": "20 minutes to complete as many rounds as you can. Steady pace, good form, tap + after each round.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "AMRAP 20",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 1200,
+       "rest": 0,
+       "note": "Move steadily. Rest briefly whenever you need to.",
+       "target": "10 swings · 8 goblet squats · 6 push-ups · 4/4 rows",
+       "counter": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "countdown",
+   "title": "Countdown 10 → 1",
+   "subtitle": "Swings + squats, descending",
+   "category": "conditioning",
+   "level": "All Levels",
+   "focus": "Conditioning",
+   "theme": "ember",
+   "description": "10 swings and 10 squats, then 9 and 9, all the way down to 1. Rest as needed between rungs.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Rung 10",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 10
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "name": "Rung 9",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 9
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 9
+      }
+     ]
+    },
+    {
+     "name": "Rung 8",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 8
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 8
+      }
+     ]
+    },
+    {
+     "name": "Rung 7",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 7
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 7
+      }
+     ]
+    },
+    {
+     "name": "Rung 6",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 6
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 6
+      }
+     ]
+    },
+    {
+     "name": "Rung 5",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 5
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 5
+      }
+     ]
+    },
+    {
+     "name": "Rung 4",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 4
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 4
+      }
+     ]
+    },
+    {
+     "name": "Rung 3",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 3
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 3
+      }
+     ]
+    },
+    {
+     "name": "Rung 2",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 2
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 20,
+       "reps": 2
+      }
+     ]
+    },
+    {
+     "name": "Rung 1",
+     "rounds": 1,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 0,
+       "reps": 1
+      },
+      {
+       "exercise": "goblet_squat",
+       "rest": 0,
+       "reps": 1
+      }
+     ]
+    },
+    {
+     "name": "KB Strict Press",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "press",
+       "rest": 60,
+       "reps": 5,
+       "perSide": true,
+       "note": "Lock out at the top and slowly lower back to the rack."
+      }
+     ]
+    },
+    {
+     "name": "KB High Pull",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "high_pull",
+       "rest": 60,
+       "reps": 10,
+       "note": "Keep elbows high, and soft grip."
+      }
+     ]
+    },
+    {
+     "name": "Plank Finisher",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "plank",
+       "work": 30,
+       "rest": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "intervals-40-20",
+   "title": "Full-Body 40/20",
+   "subtitle": "Squat · Row · Press · Deadlift",
+   "category": "conditioning",
+   "level": "All Levels",
+   "focus": "Full Body",
+   "theme": "teal",
+   "description": "A four-round circuit hitting every movement pattern with timed 40/20 intervals.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Circuit",
+     "rounds": 4,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "work": 40,
+       "rest": 20
+      },
+      {
+       "exercise": "row",
+       "work": 30,
+       "rest": 15,
+       "perSide": true
+      },
+      {
+       "exercise": "press",
+       "work": 30,
+       "rest": 15,
+       "perSide": true
+      },
+      {
+       "exercise": "deadlift",
+       "work": 40,
+       "rest": 20
+      }
+     ],
+     "restBetweenRounds": 60
+    }
+   ]
+  },
+  {
+   "id": "legs-core",
+   "title": "Legs & Core",
+   "subtitle": "Strong legs, solid middle",
+   "category": "conditioning",
+   "level": "All Levels",
+   "focus": "Lower Body",
+   "theme": "violet",
+   "description": "Squats, hinges and lunges paired with loaded core work.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Legs",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "goblet_squat",
+       "work": 45,
+       "rest": 15
+      },
+      {
+       "exercise": "deadlift",
+       "work": 45,
+       "rest": 15
+      },
+      {
+       "exercise": "reverse_lunge",
+       "work": 45,
+       "rest": 30
+      }
+     ],
+     "restBetweenRounds": 45
+    },
+    {
+     "name": "Core & Carry",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "one_arm_swing",
+       "work": 20,
+       "rest": 10,
+       "perSide": true
+      },
+      {
+       "exercise": "suitcase_march",
+       "work": 30,
+       "rest": 10,
+       "perSide": true
+      },
+      {
+       "exercise": "dead_bug",
+       "work": 40,
+       "rest": 20
+      }
+     ],
+     "restBetweenRounds": 30
+    }
+   ]
+  },
+  {
+   "id": "upper-core",
+   "title": "Upper Body & Core",
+   "subtitle": "Clean · Press · Row · Push-Up",
+   "category": "conditioning",
+   "level": "Intermediate",
+   "focus": "Upper Body",
+   "theme": "rose",
+   "description": "Shoulders, back, chest and arms with timed intervals. Keep the core braced on every rep.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Press & Pull",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "press",
+       "work": 40,
+       "rest": 15,
+       "perSide": true
+      },
+      {
+       "exercise": "row",
+       "work": 30,
+       "rest": 15,
+       "perSide": true
+      },
+      {
+       "exercise": "floor_press",
+       "work": 30,
+       "rest": 15,
+       "perSide": true
+      },
+      {
+       "exercise": "pushup",
+       "work": 30,
+       "rest": 20
+      }
+     ],
+     "restBetweenRounds": 45
+    },
+    {
+     "name": "Core",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "halo",
+       "work": 30,
+       "rest": 10
+      },
+      {
+       "exercise": "plank",
+       "work": 30,
+       "rest": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "abc",
+   "title": "Armor Building Complex",
+   "subtitle": "2 cleans · 1 press · 3 squats",
+   "category": "complexes",
+   "level": "Intermediate",
+   "focus": "Full Body",
+   "theme": "steel",
+   "description": "Dan John's famous complex, done every minute for 20 minutes. With one bell, switch sides each minute.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "ABC EMOM 20",
+     "rounds": 10,
+     "items": [
+      {
+       "exercise": "abc",
+       "work": 60,
+       "rest": 0,
+       "perSide": true,
+       "note": "Rest whatever is left of the minute.",
+       "target": "2 cleans · 1 press · 3 front squats"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "csp-complex",
+   "title": "Clean-Squat-Press Complex",
+   "subtitle": "5 rounds per side",
+   "category": "complexes",
+   "level": "Intermediate",
+   "focus": "Full Body",
+   "theme": "ember",
+   "description": "Five cleans, five front squats and five presses without putting the bell down. Then switch sides.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Complex",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "clean_squat_press",
+       "rest": 90,
+       "perSide": true,
+       "note": "Don't put the bell down until all 15 reps are done.",
+       "target": "5 clean · 5 squat · 5 press"
+      }
+     ]
+    },
+    {
+     "name": "KB Bent Row",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "row",
+       "rest": 45,
+       "reps": 8,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "KB Swing (2-hand)",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "swing",
+       "rest": 45,
+       "reps": 15,
+       "note": "Hip-hinge movement. Stand up tall. Keep it dynamic, control the bell."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hinge-complex",
+   "title": "Hinge & Pull Complex",
+   "subtitle": "RDL · Row · High Pull · Swing",
+   "category": "complexes",
+   "level": "All Levels",
+   "focus": "Posterior Chain",
+   "theme": "teal",
+   "description": "A flowing complex for the back of the body and the upper back.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Complex",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "rdl",
+       "rest": 0,
+       "reps": 8
+      },
+      {
+       "exercise": "row",
+       "rest": 0,
+       "reps": 8,
+       "perSide": true
+      },
+      {
+       "exercise": "high_pull",
+       "rest": 0,
+       "reps": 8,
+       "perSide": true
+      },
+      {
+       "exercise": "swing",
+       "rest": 75,
+       "reps": 15,
+       "note": "Move from one exercise to the next without resting."
+      }
+     ]
+    },
+    {
+     "name": "Side Plank",
+     "rounds": 2,
+     "items": [
+      {
+       "exercise": "side_plank",
+       "work": 20,
+       "rest": 10,
+       "perSide": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "thruster-burn",
+   "title": "Thruster Burn",
+   "subtitle": "Thrusters · Swings · Lunges",
+   "category": "complexes",
+   "level": "Intermediate",
+   "focus": "Conditioning",
+   "theme": "rose",
+   "description": "Goblet thrusters paired with swings and lunges for a big full-body sweat.",
+   "bells": 1,
+   "warmup": true,
+   "blocks": [
+    {
+     "name": "Round",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "thruster",
+       "rest": 15,
+       "reps": 10
+      },
+      {
+       "exercise": "swing",
+       "rest": 15,
+       "reps": 15
+      },
+      {
+       "exercise": "reverse_lunge",
+       "rest": 60,
+       "target": "5 each leg"
+      }
+     ]
+    },
+    {
+     "name": "Swing + Push-Up Ladder",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "swing_pushup",
+       "rest": 30,
+       "target": "10 swings + 5 push-ups"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "easy-day",
+   "title": "Easy Day Flow",
+   "subtitle": "Mobility and light movement",
+   "category": "recovery",
+   "level": "All Levels",
+   "focus": "Mobility",
+   "theme": "steel",
+   "description": "A gentle day to move, recover and practise technique with a light bell.",
+   "bells": 1,
+   "warmup": false,
+   "blocks": [
+    {
+     "name": "Flow",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "halo",
+       "work": 40,
+       "rest": 10
+      },
+      {
+       "exercise": "prying_squat",
+       "work": 45,
+       "rest": 15
+      },
+      {
+       "exercise": "glute_bridge",
+       "work": 40,
+       "rest": 10
+      },
+      {
+       "exercise": "hip_hinge",
+       "work": 40,
+       "rest": 20
+      },
+      {
+       "exercise": "suitcase_march",
+       "work": 30,
+       "rest": 10,
+       "perSide": true
+      }
+     ]
+    },
+    {
+     "name": "Get-Up Practice",
+     "rounds": 3,
+     "items": [
+      {
+       "exercise": "getup",
+       "rest": 30,
+       "reps": 1,
+       "perSide": true,
+       "target": "1 slow rep each side, light bell"
+      }
+     ]
+    },
+    {
+     "name": "Light Swings",
+     "rounds": 5,
+     "items": [
+      {
+       "exercise": "swing",
+       "work": 20,
+       "rest": 40,
+       "target": "Easy and crisp"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

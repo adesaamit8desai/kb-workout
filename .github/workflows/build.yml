@@ -1,0 +1,72 @@
+# Builds the app on a free GitHub macOS runner and publishes an unsigned .ipa as a release.
+# SideStore on the iPhone signs it with your free Apple ID when it installs.
+name: Build iPhone app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-15
+    env:
+      BUILD: ${{ github.run_number }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the workout library is up to date
+        run: |
+          python3 tools/build_library.py > /dev/null
+          git diff --exit-code KBWorkout/Resources/library.json || {
+            echo "::error::library.json is out of date. Run python3 tools/build_library.py and commit the result."; exit 1; }
+
+      - name: Generate Xcode project
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Build (unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project KBWorkout.xcodeproj -scheme KBWorkout -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build \
+            MARKETING_VERSION="1.0.$BUILD" CURRENT_PROJECT_VERSION="$BUILD" \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            | tee build.log | grep -E "error:|warning:|BUILD (SUCCEEDED|FAILED)" || true
+          test -d build/Build/Products/Release-iphoneos/KBWorkout.app
+
+      - name: Package .ipa
+        run: |
+          mkdir Payload
+          cp -R build/Build/Products/Release-iphoneos/KBWorkout.app Payload/
+          zip -qry KBWorkout.ipa Payload
+
+      - name: Write SideStore source
+        run: |
+          python3 tools/write_source.py \
+            --repo "${{ github.repository }}" --build "$BUILD" --ipa KBWorkout.ipa \
+            --notes "$(git log -1 --pretty=%s)" > source.json
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "build-$BUILD" KBWorkout.ipa source.json \
+            --title "Build $BUILD" --notes "$(git log -1 --pretty=%B)" --latest
+
+      - name: Keep the build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
+          if-no-files-found: ignore
