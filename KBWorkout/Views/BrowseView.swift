@@ -5,11 +5,12 @@ struct BrowseView: View {
     @Environment(WorkoutLibrary.self) private var library
     @Query(sort: \CompletedWorkout.date, order: .reverse) private var history: [CompletedWorkout]
     @State private var showingSettings = false
+    @State private var path: [Workout] = []
     @AppStorage("includeWarmup") private var includeWarmup = true
     @AppStorage("restBetweenSets") private var restBetweenSets = 60
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     header
@@ -33,7 +34,17 @@ struct BrowseView: View {
             .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(for: Workout.self) { WorkoutDetailView(workout: $0) }
             .sheet(isPresented: $showingSettings) { SettingsView() }
+            .onAppear(perform: openWorkoutForUITest)
         }
+    }
+
+    /// UI tests can launch with `-openWorkout <id>` to go straight to a workout.
+    private func openWorkoutForUITest() {
+        guard path.isEmpty,
+              let id = UserDefaults.standard.string(forKey: "openWorkout"),
+              let workout = library.workout(id: id) else { return }
+        UserDefaults.standard.removeObject(forKey: "openWorkout")
+        path = [workout]
     }
 
     private var header: some View {

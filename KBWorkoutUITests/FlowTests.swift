@@ -77,44 +77,15 @@ final class FlowTests: XCTestCase {
         snap("09-history-after-save")
     }
 
-    /// Scrolls the page and horizontal shelves until the element can be tapped.
-    private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
-        let screen = app.windows.firstMatch.frame
-        let visibleArea = screen.insetBy(dx: 0, dy: 100)
-        for _ in 0..<15 {
-            if element.exists && visibleArea.contains(element.frame) { return }
-            let frame = element.frame
-            if !element.exists || frame.maxY > visibleArea.maxY {
-                drag(app, from: 0.7, to: 0.45)        // small scroll up
-            } else if frame.minY < visibleArea.minY {
-                drag(app, from: 0.4, to: 0.65)        // small scroll down
-            } else {
-                let y = frame.midY / screen.height
-                app.coordinate(withNormalizedOffset: CGVector(dx: 0.85, dy: y))
-                    .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.15, dy: y)))
-            }
-        }
-    }
-
-    private func drag(_ app: XCUIApplication, from: CGFloat, to: CGFloat) {
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: from))
-            .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: to)))
-    }
-
     func testAmrapCounter() {
-        let app = launch()
-        waitFor(app.staticTexts["Workouts"], "home title")
-        let card = app.buttons["workout-amrap-20"].firstMatch
-        reveal(card, in: app)
-        guard app.windows.firstMatch.frame.contains(card.frame) else {
-            snap("10-amrap-not-found")
-            return XCTFail("Couldn't reach the AMRAP 20 card")
-        }
-        card.tap()
+        let app = launch(["-openWorkout", "amrap-20"])
+        waitFor(app.buttons["startWorkout"], "AMRAP 20 detail")
+        snap("10-amrap-detail")
         app.buttons["startWorkout"].tap()
         waitFor(app.buttons["countRound"], "round counter", timeout: 15)
         app.buttons["countRound"].tap()
         app.buttons["countRound"].tap()
+        XCTAssertTrue(app.staticTexts["2"].exists, "Round count should read 2")
         snap("10-amrap")
     }
 
