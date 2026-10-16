@@ -84,16 +84,21 @@ final class FlowTests: XCTestCase {
         for _ in 0..<15 {
             if element.exists && visibleArea.contains(element.frame) { return }
             let frame = element.frame
-            if !element.exists || frame.minY > screen.maxY - 140 {
-                app.swipeUp()
-            } else if frame.maxY < screen.minY + 120 {
-                app.swipeDown()
+            if !element.exists || frame.maxY > visibleArea.maxY {
+                drag(app, from: 0.7, to: 0.45)        // small scroll up
+            } else if frame.minY < visibleArea.minY {
+                drag(app, from: 0.4, to: 0.65)        // small scroll down
             } else {
                 let y = frame.midY / screen.height
                 app.coordinate(withNormalizedOffset: CGVector(dx: 0.85, dy: y))
                     .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.15, dy: y)))
             }
         }
+    }
+
+    private func drag(_ app: XCUIApplication, from: CGFloat, to: CGFloat) {
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: from))
+            .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: to)))
     }
 
     func testAmrapCounter() {

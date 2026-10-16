@@ -2,7 +2,8 @@ import AVFoundation
 import UIKit
 
 /// Spoken cues and haptics. Ducks (rather than stops) any music that is playing.
-final class CueCoach: NSObject, AVSpeechSynthesizerDelegate {
+/// Only used from the main thread.
+final class CueCoach: NSObject, AVSpeechSynthesizerDelegate, @unchecked Sendable {
     private let synthesizer = AVSpeechSynthesizer()
     private let tapHaptic = UIImpactFeedbackGenerator(style: .rigid)
     private let doneHaptic = UINotificationFeedbackGenerator()
