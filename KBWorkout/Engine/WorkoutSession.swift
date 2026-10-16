@@ -30,6 +30,8 @@ final class WorkoutSession {
     }
 
     @ObservationIgnored private let coach = CueCoach()
+    /// Speeds up the clock for automated UI tests (launch argument `-timeScale 30`).
+    @ObservationIgnored private let speed = max(UserDefaults.standard.double(forKey: "timeScale"), 1)
     @ObservationIgnored private var stepEndDate: Date?
     @ObservationIgnored private var lastTick = Date()
     @ObservationIgnored private var lastWholeSecond = 0
@@ -101,7 +103,7 @@ final class WorkoutSession {
         guard hasStarted, !isFinished else { return }
         if isPaused {
             lastTick = .now
-            if current.isTimed { stepEndDate = .now.addingTimeInterval(stepRemaining) }
+            if current.isTimed { stepEndDate = .now.addingTimeInterval(stepRemaining / speed) }
             isPaused = false
             coach.say("Resume")
         } else {
@@ -127,7 +129,7 @@ final class WorkoutSession {
         guard current.kind == .rest, !isFinished else { return }
         stepLength += seconds
         stepRemaining += seconds
-        stepEndDate = stepEndDate?.addingTimeInterval(seconds)
+        stepEndDate = stepEndDate?.addingTimeInterval(seconds / speed)
     }
 
     func countRound() {
@@ -156,20 +158,20 @@ final class WorkoutSession {
         stepLength = TimeInterval(current.duration)
         stepRemaining = stepLength
         lastWholeSecond = current.duration
-        stepEndDate = current.isTimed && !isPaused ? .now.addingTimeInterval(stepLength) : nil
+        stepEndDate = current.isTimed && !isPaused ? .now.addingTimeInterval(stepLength / speed) : nil
         announce()
     }
 
     private func tick() {
         guard hasStarted, !isPaused, !isFinished else { return }
         let now = Date()
-        let delta = now.timeIntervalSince(lastTick)
+        let delta = now.timeIntervalSince(lastTick) * speed
         lastTick = now
         elapsed += delta
         stepElapsed += delta
 
         guard current.isTimed, let end = stepEndDate else { return }
-        var remaining = end.timeIntervalSince(now)
+        var remaining = end.timeIntervalSince(now) * speed
         // Catch up if several intervals passed (e.g. the phone was locked).
         while remaining <= 0 {
             completedStepIDs.insert(current.id)
@@ -185,7 +187,7 @@ final class WorkoutSession {
                 return
             }
             remaining = stepLength - overshoot
-            stepEndDate = now.addingTimeInterval(remaining)
+            stepEndDate = now.addingTimeInterval(remaining / speed)
         }
         stepRemaining = remaining
 

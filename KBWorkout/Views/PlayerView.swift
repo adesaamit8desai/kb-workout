@@ -77,6 +77,7 @@ struct PlayerView: View {
     private var topBar: some View {
         HStack {
             Button("End") { confirmingEnd = true }
+                .accessibilityIdentifier("endWorkout")
                 .font(.system(size: 15, weight: .bold))
                 .foregroundStyle(Theme.danger)
                 .padding(.horizontal, 16)
@@ -206,6 +207,7 @@ struct PlayerView: View {
                     .buttonStyle(ChipButtonStyle(color: Theme.rest))
                 Button("Skip rest") { session.skipForward() }
                     .buttonStyle(ChipButtonStyle(color: Theme.rest))
+                    .accessibilityIdentifier("skipRest")
             }
             if let next = session.nextWorkStep {
                 UpNextCard(step: next)
@@ -260,6 +262,7 @@ struct PlayerView: View {
                         Label("Round done", systemImage: "plus")
                     }
                     .buttonStyle(PillButtonStyle(height: 52))
+                    .accessibilityIdentifier("countRound")
                 }
                 .padding(14)
                 .background(Theme.card, in: RoundedRectangle(cornerRadius: 18))
@@ -296,12 +299,14 @@ struct PlayerView: View {
                         .font(.system(size: 19, weight: .heavy))
                 }
                 .buttonStyle(PillButtonStyle(height: 64))
+                .accessibilityIdentifier("doneSet")
                 HStack {
                     textControl("‹ Previous") { session.skipBack() }
                     Spacer()
                     textControl(session.isPaused ? "Resume" : "Pause") { session.togglePause() }
                     Spacer()
                     textControl("Skip ›") { session.skipForward() }
+                        .accessibilityIdentifier("skipStep")
                 }
             }
         } else {
@@ -318,6 +323,7 @@ struct PlayerView: View {
                 }
                 .accessibilityLabel(session.isPaused ? "Resume" : "Pause")
                 roundControl("forward.end.fill", label: "Skip") { session.skipForward() }
+                    .accessibilityIdentifier("skipStep")
             }
         }
     }

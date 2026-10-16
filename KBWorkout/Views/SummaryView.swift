@@ -58,6 +58,7 @@ struct SummaryView: View {
                 Button("Save to History") { save() }
                     .buttonStyle(PillButtonStyle())
                     .padding(.top, 8)
+                    .accessibilityIdentifier("saveWorkout")
                 Button("Discard workout", role: .destructive) { onDone() }
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Theme.danger)

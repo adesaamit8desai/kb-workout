@@ -18,6 +18,18 @@ A personal kettlebell workout coach for iPhone, in the style of Apple Fitness. B
 
 See [docs/INSTALL.md](docs/INSTALL.md) for the iPhone steps.
 
+## Testing
+
+Every push runs unit tests (library, steps, workout engine) and UI tests that drive the app in the iPhone simulator and screenshot every screen. Results go to the `qa-results` branch:
+
+- `summary.md`: passed and failed tests, compile errors, and warnings
+- `screenshots/`: one PNG per screen (home, detail, rep set, rest, interval, summary, history…)
+- `xcodebuild.log.gz`: the full log
+
+`tools/qa.sh` waits for the latest run and pulls those results locally. The release is only published if the tests pass.
+
+The UI tests launch the app with `-uiTesting` (temporary in-memory history), `-seedHistory` (sample history) and `-timeScale 20` (fast timers).
+
 ## Changing workouts
 
 The exercises and workouts are defined in `tools/build_library.py`. Edit it, then run:

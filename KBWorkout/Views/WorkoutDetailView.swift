@@ -31,6 +31,7 @@ struct WorkoutDetailView: View {
                         playing = PlayerLaunch(steps: workout.steps(using: library, options: options))
                     }
                     .buttonStyle(PillButtonStyle())
+                    .accessibilityIdentifier("startWorkout")
                     Text("Exercises")
                         .font(.system(size: 20, weight: .heavy))
                         .padding(.top, 6)

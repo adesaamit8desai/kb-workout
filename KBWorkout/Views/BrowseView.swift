@@ -89,6 +89,7 @@ struct BrowseView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 22))
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("upNext")
         }
         .padding(.horizontal, 20)
     }

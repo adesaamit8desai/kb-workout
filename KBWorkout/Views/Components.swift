@@ -86,6 +86,7 @@ struct Shelf: View {
                             WorkoutCard(workout: workout, minutes: library.minutes(workout))
                         }
                         .buttonStyle(.plain)
+                        .accessibilityIdentifier("workout-\(workout.id)")
                     }
                 }
                 .padding(.horizontal, 20)

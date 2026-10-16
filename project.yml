@@ -29,3 +29,35 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         CODE_SIGN_STYLE: Automatic
+  KBWorkoutTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: KBWorkoutTests
+    dependencies:
+      - target: KBWorkout
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.adesai.kbworkout.tests
+  KBWorkoutUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: KBWorkoutUITests
+    dependencies:
+      - target: KBWorkout
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.adesai.kbworkout.uitests
+schemes:
+  KBWorkout:
+    build:
+      targets:
+        KBWorkout: all
+    test:
+      config: Debug
+      targets:
+        - KBWorkoutTests
+        - KBWorkoutUITests
